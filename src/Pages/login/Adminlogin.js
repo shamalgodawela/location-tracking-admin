@@ -10,7 +10,7 @@ const AdminLogin = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://nihon-location.vercel.app/admin-login', {
+      const response = await fetch('https://location-backend-five.vercel.app/admin-login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

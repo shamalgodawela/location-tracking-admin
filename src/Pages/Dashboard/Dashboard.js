@@ -28,7 +28,7 @@ const Dashboard = () => {
     }
 
     try {
-      const response = await axios.get('https://nihon-location.vercel.app/filter-locations', {
+      const response = await axios.get('http://localhost:3000/filter-locations', {
         params: {
           userId: selectedUserId,
           date: selectedDate,
