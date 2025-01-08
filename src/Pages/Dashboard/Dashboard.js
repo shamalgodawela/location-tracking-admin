@@ -28,7 +28,7 @@ const Dashboard = () => {
     }
 
     try {
-      const response = await axios.get('http://localhost:3000/filter-locations', {
+      const response = await axios.get('https://location-backend-five.vercel.app/filter-locations', {
         params: {
           userId: selectedUserId,
           date: selectedDate,
