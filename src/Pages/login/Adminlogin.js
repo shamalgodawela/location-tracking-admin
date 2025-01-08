@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import './admin.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 const AdminLogin = () => {
   const [email, setemail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,7 +26,7 @@ const AdminLogin = () => {
       if (response.ok) {
         // Store the token and redirect to the admin dashboard
         localStorage.setItem('adminToken', data.token);
-        alert('Login successful!');
+        toast.success("Login Success....");
         window.location.href = '/admin-dashboard';
       } else {
         // Show error message
@@ -64,8 +67,12 @@ const AdminLogin = () => {
             />
             <label>Password</label>
           </div>
-          <button type="submit" className="btn-submit">Login</button>
+          <button type="submit" className="btn-submit" disabled={loading}>
+  {loading ? 'Logging in...' : 'Login'}
+</button>
+
         </form>
+        {loading && <div className="loading-indicator">Loading...</div>}
       </div>
       </div>
     
