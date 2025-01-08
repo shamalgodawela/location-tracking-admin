@@ -9,6 +9,9 @@ const NavBar = () => {
           <li class="nav-button-home"><a href="#">Dashboard</a></li>
           <li class="nav-button-services"><a href="#">Calculate Fuel Expenses</a></li>
           <li class="nav-button-products"><a href="#">Exe Monthly Travel Summery</a></li>
+          <li className="nav-button-logout">
+            <button className="logout-button" ><a href="/">Logout</a></button>
+          </li>
        </ul>
       </nav>
     </div>
