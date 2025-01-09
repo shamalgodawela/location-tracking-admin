@@ -8,7 +8,7 @@ import './dashboard.css'
 
 const Dashboard = () => {
   const users = [
-    { _id: '67690c36da8ebce58c1d3aaf', name: 'shamal' },
+    { _id: '677fa7912765a0ca98606160', name: 'shamal' },
     { _id: '67690c36da8ebce58c1d3aaf', name: 'Ahamed' },
     { _id: '67690c36da8ebce58c1d3aaf', name: 'Chameera' },
     { _id: '67690c36da8ebce58c1d3aaf', name: 'Dasun' },
