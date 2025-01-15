@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import NavBar from '../../Components/NAVbAR/NavBar';
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
-import L from 'leaflet';
 import 'leaflet/dist/leaflet.css'; 
 import './dashboard.css'
 
@@ -54,17 +53,19 @@ const Dashboard = () => {
   <div className="form-group">
     <label className="form-label">Select Executive:</label>
     <select
-      className="form-select"
-      value={selectedUserId}
-      onChange={(e) => setSelectedUserId(e.target.value)}
-    >
-      <option value="">-- Select a User --</option>
-      {users.map((user) => (
-        <option key={user._id} value={user._id}>
-          {user.name}
-        </option>
-      ))}
-    </select>
+  className="form-select"
+  value={selectedUserId}
+  onChange={(e) => setSelectedUserId(e.target.value)}
+>
+  <option value="">-- Select a User --</option>
+  <option value="677fa7912765a0ca98606160">Shamal</option>
+  <option value="67872501b846ffd5ddb5c10d">Ahamed</option>
+  <option value="6787365b78d35405c81125bc">Chameera</option>
+  <option value="678726e5b846ffd5ddb5c111">Dasun</option>
+  <option value="6787279ab846ffd5ddb5c114">Navaneedan</option>
+  <option value="678727aeb846ffd5ddb5c117">Nayum</option>
+</select>
+
   </div>
   <div className="form-group">
     <label className="form-label">Select Date:</label>
