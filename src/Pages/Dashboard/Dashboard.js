@@ -3,7 +3,7 @@ import axios from 'axios';
 import NavBar from '../../Components/NAVbAR/NavBar';
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
 import L from 'leaflet';
-import 'leaflet/dist/leaflet.css'; // Ensure leaflet CSS is imported
+import 'leaflet/dist/leaflet.css'; 
 import './dashboard.css'
 
 const Dashboard = () => {
@@ -21,7 +21,7 @@ const Dashboard = () => {
   const [selectedDate, setSelectedDate] = useState('');
   const [locations, setLocations] = useState([]);
 
-  // Handle filter submission
+ 
   const handleFilter = async () => {
     if (!selectedUserId || !selectedDate) {
       alert('Please select a user and a date.');
