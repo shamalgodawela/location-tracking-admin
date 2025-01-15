@@ -7,12 +7,13 @@ import './dashboard.css'
 
 const Dashboard = () => {
   const users = [
-    { _id: '677fa7912765a0ca98606160', name: 'shamal' },
-    { _id: '6787365b78d35405c81125bc', name: 'Chameera' },
+    // { _id: '677fa7912765a0ca98606160', name: 'shamal' },
     { _id: '678726e5b846ffd5ddb5c111', name: 'Dasun' },
+    { _id: '67872501b846ffd5ddb5c10d', name: 'Ahamed' },
+    { _id: '6787365b78d35405c81125bc', name: 'Chameera' },
     { _id: '6787279ab846ffd5ddb5c114', name: 'Navaneedan'},
     { _id: '678727aeb846ffd5ddb5c117', name: 'Nayum'},
-    { _id: '67872501b846ffd5ddb5c10d', name: 'Ahamed' },
+    
   
   ];
 
