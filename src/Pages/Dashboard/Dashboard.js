@@ -9,10 +9,11 @@ import './dashboard.css'
 const Dashboard = () => {
   const users = [
     { _id: '677fa7912765a0ca98606160', name: 'shamal' },
-    { _id: '67690c36da8ebce58c1d3aaf', name: 'Ahamed' },
-    { _id: '67690c36da8ebce58c1d3aaf', name: 'Chameera' },
-    { _id: '67690c36da8ebce58c1d3aaf', name: 'Dasun' },
-    { _id: '67690c36da8ebce58c1d3aaf', name: 'Navaneedan'},
+    { _id: '67872501b846ffd5ddb5c10d', name: 'Ahamed' },
+    { _id: '6787365b78d35405c81125bc', name: 'Chameera' },
+    { _id: '678726e5b846ffd5ddb5c111', name: 'Dasun' },
+    { _id: '6787279ab846ffd5ddb5c114', name: 'Navaneedan'},
+    { _id: '678727aeb846ffd5ddb5c117', name: 'Nayum'},
   
   ];
 
@@ -42,7 +43,7 @@ const Dashboard = () => {
     }
   };
 
-  // Sort locations by timestamp to ensure the path is drawn in correct order
+  
   const sortedLocations = [...locations].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
 
   return (
