@@ -24,12 +24,12 @@ const AdminLogin = () => {
       const data = await response.json();
 
       if (response.ok) {
-        // Store the token and redirect to the admin dashboard
+        
         localStorage.setItem('adminToken', data.token);
         toast.success("Login Success....");
         window.location.href = '/admin-dashboard';
       } else {
-        // Show error message
+        
         setErrorMessage(data.error || 'Invalid username or password');
       }
     } catch (error) {
