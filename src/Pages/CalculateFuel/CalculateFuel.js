@@ -2,7 +2,7 @@ import React from 'react'
 
 const CalculateFuel = () => {
   return (
-    <div>CalculateFuell</div>
+    <div></div>
   )
 }
 
