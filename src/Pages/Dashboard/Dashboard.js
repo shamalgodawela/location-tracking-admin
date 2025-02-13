@@ -13,7 +13,7 @@ const Dashboard = () => {
     { _id: '6787365b78d35405c81125bc', name: 'Chameera' },
     { _id: '6787279ab846ffd5ddb5c114', name: 'Navaneedan'},
     { _id: '678727aeb846ffd5ddb5c117', name: 'Nayum'},
-    { _id: '678727aeb846ffd5ddb5c117', name: 'Roshan'},
+    // { _id: '678727aeb846ffd5ddb5c117', name: 'Roshan'},
     
   
   ];
